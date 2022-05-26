@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:ital,wght@0,400;0,700;1,300;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    text-transform: uppercase;
+    color: rgb(70, 130, 180);
+    border-bottom: 2px solid rgb(226,238,255);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+@media (min-width: 300px){
+
+
+    .about, .projects, .skills, .education, .contact{
+        padding: 3%;
+    }
+    .header{
+        color: white;
+        text-align: center;
+    }
+    .header > aside{
+        background: url(./img/header-pic.jpeg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 29vh;
+    }
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        background-color: steelblue;
+        padding: 0;
+        justify-content: space-between;
+        padding:5% 2%;
+        transition: all 1s;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+
+    }
+
+    nav ul :hover{
+        transform: scale(2);
+    }
+
+    .about p{
+        text-indent: 30px;
+    }
+    .about-me{
+        display: flex;
+    }
+
+    .projects{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+    .project-1{
+        background: url(./img/header-pic.jpeg);
+    }
+    .project-2{
+        background: url(./img/class-exercise.jpeg);
+    }
+    .project-3{
+        background: url(./img/sass-exercise.png);
+    }
+    .project-4{
+        background: url(./img/html-class.png);
+    }
+
+    .project-1, .project-2, .project-3, .project-4{
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 19vh;
+    }
+
+
+    .skillset1, .skillset2{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 7% 0% 0% 5%;
+    }
+
+    .skillset1 > aside{
+        background: url(./img/coding.png);
+    }
+
+    .skillset2 > aside{
+        background: url(./img/ux-interface.png);
+    }
+
+    .skillset1 > aside, .skillset2 > aside{
+        height: 19vh;
+        width: 21vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .tamwood-pic{
+        background: url(./img/tamwood.logo.png);
+        
+    }
+
+    .springboard-pic{
+        background: url(./img/springboard.logo.png);
+    }
+
+    .aau-pic{
+        background: url(./img/aau.logo.png);
+        margin-right: 3%;
+    }
+
+    .scu-pic{
+        background: url(./img/scu.logo.png);
+        margin-right: 3%;
+    }
+
+    .tamwood-pic, .springboard-pic, .aau-pic, .scu-pic{
+        background-size: contain;
+        float: left;
+        height: 16vh;
+        width: 16vh;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+
+    form > div{
+        text-align: center;
+    }
+
+    div > input{
+        width: 49.3%;
+        background-color: rgb(226,238,255);
+        border: 2px solid rgb(226,238,255);
+    }
+
+    .footer{
+        color: white;
+        font-size: 0.5rem;
+        background-color: steelblue;
+        text-align: center;
+        padding: 3%;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        padding: 6%;
+    }
+    .icons > a{
+        color: white;
+        text-decoration: none;
+    }
+    div > input{
+        width: 49.3%;
+    }
+}
+
+@media (min-width: 700px){
+
+    nav ul{
+        padding: 5% 3%;
+    }
+
+    nav a{
+        font-size: 1rem;
+    }
+
+    .skillset1, .skillset2{
+        padding: 7% 0% 0% 9%;
+        column-gap: 19vw;
+    }
+
+    .aau-pic{
+        margin-right: 2%;
+        height: 12vh;
+        width: 12vh;
+    }
+    .scu-pic{
+        margin-right: 2%;
+        
+    }
+
+    .tamwood-pic, .springboard-pic, .scu-pic{
+        height: 13vh;
+        width: 13vh;
+    }
+
+    form > textarea{
+        height: 16vh;
+    }
+    .footer{
+        font-size: 1rem;
+        padding: 6%;
+        
+    }
+}
+
+@media (min-width: 1000px){
+
+    .about, .projects, .skills, .education, .contact{
+        padding: 6% 9%;
+    }
+
+    .header > aside{
+        height: 39vh;
+    }
+
+    nav ul{
+        padding: 1.6% 9%;
+    }
+
+    .about{
+        line-height: 3rem;
+    }
+
+    .about p{
+        text-indent: 32px;
+    }
+    
+    .projects div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+
+    .skillset1, .skillset2{
+        column-gap: 31vw;
+    }
+   
+
+
+
+    
+    .footer{
+        padding: 2.3% 11%;
+        line-height: 6vh;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .tamwood-pic, .springboard-pic, .aau-pic, .scu-pic{
+        height: 19vh;
+        width: 19vh;
+    }
+}
